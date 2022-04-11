@@ -36,13 +36,13 @@ class OpenGLWeb extends OpenGLBase {
     this.divId = options["divId"];
     this.dpr = options["dpr"];
 
-    ui.platformViewRegistry.registerViewFactory(divId, (int viewId) {
-      this.element = CanvasElement(
-          width: (width * dpr).toInt(), height: (height * dpr).toInt())
-        ..id = 'canvas-id';
+    // ui.platformViewRegistry.registerViewFactory(divId, (int viewId) {
+    //   this.element = CanvasElement(
+    //       width: (width * dpr).toInt(), height: (height * dpr).toInt())
+    //     ..id = 'canvas-id';
 
-      return this.element;
-    });
+    //   return this.element;
+    // });
   }
 
   makeCurrent(List<int> egls) {
